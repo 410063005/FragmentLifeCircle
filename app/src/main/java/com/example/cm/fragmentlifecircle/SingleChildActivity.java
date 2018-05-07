@@ -8,7 +8,10 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by kingcmchen on 2018/5/7.
+ *
+ * Fragment的生命周期(单个Fragment).
+ *
+ * Created by 410063005 on 2018/5/7.
  */
 
 public class SingleChildActivity extends AppCompatActivity {

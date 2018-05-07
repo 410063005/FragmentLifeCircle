@@ -35,7 +35,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:onClick="onTextClick"
-        android:text="TextView"
+        android:text="嵌套的fragment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -45,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:onClick="onTextClick"
+        android:text="多个fragment-bottomBar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </android.support.constraint.ConstraintLayout>

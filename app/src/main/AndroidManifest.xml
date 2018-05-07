@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".SingleChildActivity" />
         <activity android:name=".MultiChildActivity" />
+        <activity android:name=".NestChildActivity" />
+        <activity android:name=".MultiChildBottomBarActivity" />
+        <activity android:name=".StatefulFragmentActivity" />
     </application>
 
 </manifest>

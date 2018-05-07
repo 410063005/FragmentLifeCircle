@@ -8,21 +8,47 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewStub;
+import android.widget.TextView;
 
 /**
- * Created by kingcmchen on 2018/5/7.
+ * Created by 410063005 on 2018/5/7.
  */
 
 public class ChildFragment extends Fragment {
     private String TAG = "ChildFragment";
 
-    public static ChildFragment newInstance(String id) {
+    private ViewStub mVsContent;
 
+    public static Bundle args(String id) {
+        Bundle arg = new Bundle();
+        arg.putString("ID", id);
+        return arg;
+    }
+
+    public static ChildFragment newInstance(String id) {
         Bundle args = new Bundle();
         args.putString("ID", "ChildFragment-" + id);
         ChildFragment fragment = new ChildFragment();
         fragment.setArguments(args);
         return fragment;
+    }
+
+    public static LazyChildFragment newLazyInstance(String id) {
+        Bundle args = new Bundle();
+        args.putString("ID", "ChildFragment-" + id);
+        LazyChildFragment fragment = new LazyChildFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    protected int getContentResId() {
+        return R.layout.fragment_child;
+    }
+
+    @Override
+    public String toString() {
+        return TAG;
     }
 
     @Override
@@ -51,7 +77,12 @@ public class ChildFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Log.d(TAG, "onCreateView() called with: inflater = [" + inflater + "], container = [" + container + "], savedInstanceState = [" + savedInstanceState + "]");
-        return super.onCreateView(inflater, container, savedInstanceState);
+        View view = inflater.inflate(R.layout.fragment_common, container, false);
+
+        mVsContent = view.findViewById(R.id.vs_content);
+        mVsContent.setLayoutResource(getContentResId());
+        doInflateInternal();
+        return view;
     }
 
     @Override
@@ -96,8 +127,13 @@ public class ChildFragment extends Fragment {
         super.onDetach();
     }
 
-    @Override
-    public String toString() {
-        return TAG;
+    private void doInflateInternal() {
+        doInflate();
+    }
+
+    protected void doInflate() {
+        View tmp = mVsContent.inflate();
+        TextView textView = tmp.findViewById(R.id.textView);
+        textView.setText(TAG);
     }
 }
