@@ -7,6 +7,6 @@ import android.support.v7.app.AppCompatActivity;
  *
  * Created by 410063005 on 2018/5/7.
  */
-// TODO: 2018/5/7  
+// TODO: 2018/5/7
 public class StatefulFragmentActivity extends AppCompatActivity {
 }
