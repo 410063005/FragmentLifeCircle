@@ -134,6 +134,8 @@ public class ChildFragment extends Fragment {
     protected void doInflate() {
         View tmp = mVsContent.inflate();
         TextView textView = tmp.findViewById(R.id.textView);
-        textView.setText(TAG);
+        if (textView != null) {
+            textView.setText(TAG);
+        }
     }
 }

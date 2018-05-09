@@ -29,14 +29,15 @@ public class NestChildActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nest_child);
 
-        FragmentTabHost fth = findViewById(android.R.id.tabcontent);
-        fth.setup(this, getSupportFragmentManager());
+        FragmentTabHost fth = findViewById(android.R.id.tabhost);
+        fth.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
         TabHost.TabSpec t1 = fth.newTabSpec("child1").setIndicator("Child1");
         fth.addTab(t1, ChildFragment.class, ChildFragment.args("child1"));
         TabHost.TabSpec t2 = fth.newTabSpec("child2").setIndicator("Child2");
-        fth.addTab(t2, ChildFragment.class, ChildFragment.args("child2"));
+        fth.addTab(t2, NestChildFragment.class, ChildFragment.args("child2"));
         TabHost.TabSpec t3 = fth.newTabSpec("child3").setIndicator("Child3");
         fth.addTab(t3, ChildFragment.class, ChildFragment.args("child3"));
+
     }
 }
