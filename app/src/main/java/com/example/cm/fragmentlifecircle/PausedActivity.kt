@@ -28,7 +28,7 @@ class PausedActivity : AppCompatActivity() {
 
             when (intent?.action) {
                 // "com.example.cm.fragmentlifecircle.aMessage" -> showDialogFragment()
-                "com.example.cm.fragmentlifecircle.aMessage" -> showDialogFragmentFixed()
+                "com.example.cm.fragmentlifecircle.aMessage" -> showDialogFragment()
             }
         }
     }

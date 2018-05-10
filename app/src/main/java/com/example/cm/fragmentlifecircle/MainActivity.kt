@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             R.id.textView2 -> MultiChildActivity.start(this)
             R.id.textView3 -> NestChildActivity.start(this)
             R.id.textView4 -> MultiChildBottomBarActivity.start(this)
-            R.id.textView5 -> {}
+            R.id.textView5 -> CommitTransactionActivity.start(this)
             R.id.textView6 -> PausedActivity.start(this)
         }
     }

@@ -23,6 +23,7 @@
         <activity android:name=".StatefulFragmentActivity" />
         <activity android:name=".PausedActivity" />
         <activity android:name=".Paused2Activity" />
+        <activity android:name=".CommitTransactionActivity" />
     </application>
 
 </manifest>

@@ -57,7 +57,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:onClick="onTextClick"
-        android:text="单个fragment-输入法问题"
+        android:text="commitAllowingStateLoss"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
