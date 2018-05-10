@@ -21,6 +21,8 @@
         <activity android:name=".NestChildActivity" />
         <activity android:name=".MultiChildBottomBarActivity" />
         <activity android:name=".StatefulFragmentActivity" />
+        <activity android:name=".PausedActivity" />
+        <activity android:name=".Paused2Activity" />
     </application>
 
 </manifest>
