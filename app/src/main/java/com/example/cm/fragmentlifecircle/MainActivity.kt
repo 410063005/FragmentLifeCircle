@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             R.id.textView4 -> MultiChildBottomBarActivity.start(this)
             R.id.textView5 -> CommitTransactionActivity.start(this)
             R.id.textView6 -> PausedActivity.start(this)
+            R.id.textView7 -> ParentActivity.start(this)
         }
     }
 }
