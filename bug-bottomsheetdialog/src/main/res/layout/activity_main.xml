@@ -10,10 +10,19 @@
         android:id="@+id/tvShowDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click to show dialog"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Click to show dialog(右边的RecyclerView不能滚动)"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvShowDialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Click to show dialog(右边的RecyclerView可以滚动)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShowDialog" />
 </android.support.constraint.ConstraintLayout>

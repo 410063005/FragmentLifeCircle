@@ -11,8 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         tvShowDialog.setOnClickListener {
-            MyBottomSheetDialog().show(supportFragmentManager, "dialog")
+            MyBottomSheetDialog.newInstance(R.layout.fragment_my_bottom_dialog).show(supportFragmentManager, "dialog")
         }
 
+        tvShowDialog2.setOnClickListener {
+            MyBottomSheetDialog.newInstance(R.layout.fragment_my_bottom_dialog_fixed).show(supportFragmentManager, "dialog")
+        }
     }
 }
