@@ -1,0 +1,2 @@
+BottomSheetDialog使用两个RecyclerView，第一个可以上下滚动，而第二个不可以
+
