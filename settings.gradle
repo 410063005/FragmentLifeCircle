@@ -1,1 +1,1 @@
-include ':app', ':bug-translucent', ':bug-fitsystemwindows', ':bug-bottomsheetdialog'
+include ':app', ':bug-translucent', ':bug-fitsystemwindows', ':bug-bottomsheetdialog', ':demo-arch'

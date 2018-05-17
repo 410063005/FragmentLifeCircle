@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/bug-fitsystemwindows/bug-fitsystemwindows.iml" filepath="$PROJECT_DIR$/bug-fitsystemwindows/bug-fitsystemwindows.iml" />
       <module fileurl="file://$PROJECT_DIR$/bug-translucent/bug-translucent.iml" filepath="$PROJECT_DIR$/bug-translucent/bug-translucent.iml" />
       <module fileurl="file://$PROJECT_DIR$/bug-translucent/bug1.iml" filepath="$PROJECT_DIR$/bug-translucent/bug1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-arch/demo-arch.iml" filepath="$PROJECT_DIR$/demo-arch/demo-arch.iml" />
     </modules>
   </component>
 </project>
