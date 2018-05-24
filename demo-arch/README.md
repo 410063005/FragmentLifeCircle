@@ -60,4 +60,44 @@ https://medium.com/@BladeCoder/kotlin-singletons-with-argument-194ef06edd9e
 这是一个来自https://codelabs.developers.google.com/codelabs/android-room-with-a-view/#2的示例
 
 
-#
+# ViewModel
+解决了什么问题？
+
++ UI controller生命周期带来的问题 - 界面上的数据怎么办？
+ + 少量数据 - onSaveInstanceState()
+ + bitmap或大量数据?
++ UI controller中的异步请求问题
+
+UI controller的职责
+
++ 展示数据
++ 跟用户交互，如点击点击和触摸事件
++ 跟系统交互，如请求权限
+
+UI controller不应该负责从网络或数据库加载数据！
+
+ViewModel特性
+
++ ViewModel存在于View，UI controller(LifeCycleOwner)生命周期之外
++ ViewModel可以在UI controller生命周期中共享，也可以在Activity的多个Fragment之间共享(解决了Fragment难通信的问题)
++ ViewModel不应引用任何view，LifeCycle，或其他任何会引用activity context的对象
++ ViewModel可以包含LifeCycleObserver
+
+
+![](https://developer.android.com/images/topic/libraries/architecture/viewmodel-lifecycle.png)
+
+
+场景：Share data between fragments ， 左边的Fragment是列表，右边的Fragment是详情页。右边观察到ViewModel的更新(左边选择了列表中某一项)后执行相应操作
+
+好处：activity跟fragment解耦, fragment与fragment解耦
+
+
+# Lifecycle
+
+ProcessLifecycleOwner
+
+轻松地解决了监听应用前后台切换的问题  https://proandroiddev.com/react-to-app-foreground-and-background-events-with-processlifecycleowner-96278e5816fa
+
+# LiveData
+
+https://github.com/googlesamples/android-architecture-components/blob/master/PagingWithNetworkSample/app/src/main/java/com/android/example/paging/pagingwithnetwork/reddit/ui/SubRedditViewModel.kt#L33
