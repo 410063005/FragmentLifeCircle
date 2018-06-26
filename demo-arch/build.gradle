@@ -15,11 +15,12 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+    //    resConfigs "zh-rCN"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -43,10 +44,10 @@ dependencies {
     kapt "android.arch.persistence.room:compiler:$room_version"
 
     // optional - RxJava support for Room
-    implementation "android.arch.persistence.room:rxjava2:$room_version"
+    // implementation "android.arch.persistence.room:rxjava2:$room_version"
 
     // optional - Guava support for Room, including Optional and ListenableFuture
-    implementation "android.arch.persistence.room:guava:$room_version"
+    // implementation "android.arch.persistence.room:guava:$room_version"
 
     // Test helpers
     testImplementation "android.arch.persistence.room:testing:$room_version"
