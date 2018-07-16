@@ -1,1 +1,1 @@
-include ':app', ':bug-translucent', ':bug-fitsystemwindows', ':bug-bottomsheetdialog', ':demo-arch', ':demo-observer-pattern', ':bug-call-notify-when-scroll'
+include ':app', ':bug-translucent', ':bug-fitsystemwindows', ':bug-bottomsheetdialog', ':demo-arch', ':demo-observer-pattern', ':bug-call-notify-when-scroll', ':doublelayouttaxation', ':demo-glide', ':demo-array-map'

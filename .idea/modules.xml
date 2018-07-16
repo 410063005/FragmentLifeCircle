@@ -9,7 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/bug-fitsystemwindows/bug-fitsystemwindows.iml" filepath="$PROJECT_DIR$/bug-fitsystemwindows/bug-fitsystemwindows.iml" />
       <module fileurl="file://$PROJECT_DIR$/bug-translucent/bug-translucent.iml" filepath="$PROJECT_DIR$/bug-translucent/bug-translucent.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-arch/demo-arch.iml" filepath="$PROJECT_DIR$/demo-arch/demo-arch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-array-map/demo-array-map.iml" filepath="$PROJECT_DIR$/demo-array-map/demo-array-map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-glide/demo-glide.iml" filepath="$PROJECT_DIR$/demo-glide/demo-glide.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-observer-pattern/demo-observer-pattern.iml" filepath="$PROJECT_DIR$/demo-observer-pattern/demo-observer-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doublelayouttaxation/doublelayouttaxation.iml" filepath="$PROJECT_DIR$/doublelayouttaxation/doublelayouttaxation.iml" />
     </modules>
   </component>
 </project>
