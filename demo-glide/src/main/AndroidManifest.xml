@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".PNGActivity" />
         <activity android:name=".WebpActivity" />
+        <activity android:name=".TargetActivity" />
+        <activity android:name=".okhttploader.OkHttpGlideUrlLoaderActivity" />
     </application>
 
 </manifest>
